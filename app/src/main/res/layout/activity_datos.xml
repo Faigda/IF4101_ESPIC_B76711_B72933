@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E2E4">
+
+    <Spinner
+        android:id="@+id/spn_EstadoCivilActualizar"
+        android:layout_width="160dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:entries="@array/array_EstadoCivil"
+        android:spinnerMode="dialog"
+        android:paddingRight="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_TelefonoActualizar" />
+
+    <Spinner
+        android:id="@+id/spn_TiposSangreActualizar"
+        android:layout_width="190dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:entries="@array/array_TiposSangre"
+        android:spinnerMode="dialog"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spn_EstadoCivilActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/et_TelefonoActualizar" />
+
+
+    <EditText
+        android:id="@+id/et_DomicilioActualizar"
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#20247b"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Domicilio"
+        android:textColor="#20247b"
+        android:inputType="textMultiLine"
+        android:textColorHint="#20247b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_EstadoCivilActualizar" />
+
+    <EditText
+        android:id="@+id/et_TelefonoActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="#20247b"
+        android:digits="+1234567890 "
+        android:ems="10"
+        android:hint="Teléfono"
+        android:textColor="#20247b"
+        android:inputType="phone"
+        android:textColorHint="#20247b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_NombreActualizar" />
+
+    <EditText
+        android:id="@+id/et_ApellidosActualizar"
+        android:layout_width="170dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#20247b"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="textPersonName"
+        android:textColorHint="#20247b"
+        android:textColor="#20247b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toEndOf="@+id/et_NombreActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/et_CedulaActualizar" />
+
+    <EditText
+        android:id="@+id/et_NombreActualizar"
+        android:layout_width="170dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#20247b"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textColorHint="#20247b"
+        android:textColor="#20247b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_CedulaActualizar" />
+
+    <EditText
+        android:id="@+id/et_CedulaActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="#20247b"
+        android:digits="1234567890 "
+        android:ems="10"
+        android:textColor="#20247b"
+        android:hint="Cédula"
+        android:inputType="phone"
+        android:maxLength="9"
+        android:textColorHint="#20247b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_Actualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#20247b"
+        android:text="Actualizar Datos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Actualización de datos."
+        android:textAlignment="center"
+        android:textColor="#20247b"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

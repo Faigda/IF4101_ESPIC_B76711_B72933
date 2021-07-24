@@ -1,0 +1,2 @@
+rootProject.name = "IF4101_ESPIC_B76711_B72933"
+include ':app'

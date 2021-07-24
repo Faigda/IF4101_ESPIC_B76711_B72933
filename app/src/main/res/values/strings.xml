@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">IF4101_ESPIC_B76711_B72933</string>
+    <string-array name="array_TiposSangre">
+        <item>Tipo de Sangre</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <string-array name="array_EstadoCivil">
+        <item>Estado Civil</item>
+        <item>Soltero</item>
+        <item>Casado</item>
+        <item>Unión Libre</item>
+        <item>Divorciado</item>
+        <item>Otro</item>
+    </string-array>
+
+</resources>
